@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Tracker Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+  <img src="logo.png" alt="App Logo" style="height:40px; vertical-align:middle;">
+  <h1 style="display:inline;">Fitness Tracker Dashboard</h1>
+</header>
+  <main>
+    <section id="stats-overview">
+      <div class="stat-card">
+        <h2>Total Workouts</h2>
+        <p id="total-workouts">0</p>
+      </div>
+      <div class="stat-card">
+        <h2>Total Time (min)</h2>
+        <p id="total-time">0</p>
+      </div>
+    </section>
+    <section id="workout-logs">
+      <h2>Workout Logs</h2>
+      <ul id="logs-list"></ul>
+    </section>
+    <section id="add-workout">
+      <h2>Add Workout</h2>
+      <form id="workout-form">
+        <label for="workout-type">Type:</label>
+        <input type="text" id="workout-type" required />
+        <label for="workout-duration">Duration (minutes):</label>
+        <input type="number" id="workout-duration" min="1" required />
+        <label for="workout-notes">Notes:</label>
+        <textarea id="workout-notes"></textarea>
+        <button type="submit">Add Workout</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Fitness Tracker</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
